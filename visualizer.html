@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstracts selection</title>
+    <link rel="stylesheet" href="visualizer.css">
+    <script src="visualizer.js"></script>
+</head>
+
+<body>
+    <div class="upper-pane">
+        <div class="title-bloc">Abstract filtering</div>
+        <button class="import-button" id="import_json">
+            Import file
+        </button>
+        <div class="number-control">
+            <button id="decrease">◀</button>
+            <input type="number" class="document-selection"
+                id="document_selection" min="0" max="0" value="0">
+            <button id="increase">▶</button>
+        </div>
+    </div>
+    <div class="lower-pane">
+        <div class="text-pane">
+            <div class="text-pane__text-area"></div>
+        </div>
+        <div class="entities-pane">
+            <div class="entities-pane__criteria-section">
+                <div class="entities-pane__criteria-section__inclusion"></div>
+                <div class="entities-pane__criteria-section__exclusion"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
